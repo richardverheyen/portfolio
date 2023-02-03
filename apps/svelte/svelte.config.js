@@ -7,8 +7,15 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
+	trailingSlash: 'always',
+	
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			pages: 'public',
+			assets: 'public',
+			fallback: null,
+			precompress: false
+		})
 	}
 };
 
