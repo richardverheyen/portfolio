@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# svelte
+.svelte-kit
+
 # misc
 .DS_Store
 *.pem
